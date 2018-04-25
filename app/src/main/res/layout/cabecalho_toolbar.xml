@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="32dp"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimaryDark"
+    android:layout_alignBottom="@id/toolbar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/localizacao_cid"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:src="@mipmap/localizacao_guia"/>
+            <TextView
+                android:id="@+id/nome_cidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JUAZEIRO DO NORTE-CE"
+                android:layout_marginTop="4dp"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

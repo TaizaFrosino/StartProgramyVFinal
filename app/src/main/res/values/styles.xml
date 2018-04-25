@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppThemeNoActionBarToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textColorPrimary">#555555</item>
+        <item name="android:textColorSecondary">#777777</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+        <item name="actionMenuTextColor">#FFFFFF</item>
+        <item name="android:actionMenuTextColor">#FFFFFF</item>
+
+        <item name="searchViewStyle">@style/SearchViewMy</item>
+
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">#FFFFFF</item>
+    </style>
+
+    <style name="SearchViewMy" parent="Widget.AppCompat.Light.SearchView">
+        <item name="searchHintIcon">@null</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppThemeNoActionBarToolbar">
+        <item name="android:textColorSecondary">#FFFFFF</item>
+    </style>
+
+    <style name="CustomSpinner">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="tabStyle" parent="@android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">#fff</item>
+    </style>
+
+    <style name="AppThemeNoActionBarToolbar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppThemeNoActionBarToolbar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
+

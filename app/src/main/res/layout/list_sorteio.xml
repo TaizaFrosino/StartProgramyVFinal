@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/style_raffle"
+    android:id="@+id/llGeneralSort">
+
+    <RelativeLayout
+        android:id="@+id/rlGeneralSort"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75">
+        <ImageView
+            android:id="@+id/iv_sorteio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/sort"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_sorteio"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="25dp"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            android:src="@mipmap/sort2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_sorteio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp"
+            android:paddingLeft="10dp"
+            android:text="CONCORRA A ISSO E MUITO MAIS"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_sorteio"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="PARTICIPAR"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

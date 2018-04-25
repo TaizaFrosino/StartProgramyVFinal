@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/play"
+            android:title="PLAY" />
+        <item
+            android:id="@+id/guia"
+            android:title="GUIA" />
+        <item
+            android:id="@+id/sorteios"
+            android:title="SORTEIOS" />
+        <item
+            android:id="@+id/eventos"
+            android:title="EVENTOS"/>
+        <item
+            android:id="@+id/perfil"
+            android:title="PERFIL"/>
+        <item
+            android:id="@+id/faleconosco"
+            android:title="FALE CONOSCO"/>
+
+
+</menu>
