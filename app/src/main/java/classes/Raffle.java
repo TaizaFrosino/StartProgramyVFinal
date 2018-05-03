@@ -6,7 +6,7 @@ public class Raffle {
     private int image, imageCircle;
     private boolean botao;
     private String description;
-    private String rar;
+
 
     public Raffle(int id, int image, int imageCircle, String description, boolean botao) {
         this.id = id;
