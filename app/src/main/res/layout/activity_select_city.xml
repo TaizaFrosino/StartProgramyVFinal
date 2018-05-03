@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:background="@mipmap/fundo_vermelho">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -66,27 +68,11 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="32dp">
 
-                <TextView
-                    android:id="@+id/tv_login"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="ENTRAR"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="OU"
-                    android:textColor="#FFFFFF"
-                    android:padding="5dp"/>
-                <TextView
-                    android:id="@+id/tv_cadastrar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CADASTRAR"
-                    android:textColor="#FFFFFF"
-                    android:textStyle="bold"/>
+
+                <com.google.android.gms.common.SignInButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></com.google.android.gms.common.SignInButton>
+
             </LinearLayout>
 
         </LinearLayout>
