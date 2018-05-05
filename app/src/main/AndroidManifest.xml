@@ -31,7 +31,7 @@
         <activity android:name=".Empresa" />
         <activity android:name=".DetalheEmpresa" />
         <activity android:name=".Advertising" />
-        <activity android:name=".Login" />
+        <activity android:name="mvc.Login" />
         <activity android:name=".Cadastro"></activity>
     </application>
 

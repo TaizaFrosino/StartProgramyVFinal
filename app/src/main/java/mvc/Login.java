@@ -1,16 +1,19 @@
-package startprogramy.studio.com.startprogramy;
+package mvc;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
+
+import startprogramy.studio.com.startprogramy.R;
 
 public class Login extends AppCompatActivity {
 
 
 
-    Button btnLogin;
+    Button btnCadastrar;
     private EditText usuarioLogin;
     private EditText senhaLogin;
 
@@ -22,7 +25,14 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        btnLogin = (Button) findViewById(R.id.button);
+        btnCadastrar = (Button) findViewById(R.id.btnCadastrar);
+        btnCadastrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
         usuarioLogin = (EditText) findViewById(R.id.id_usuarioLogin);
         senhaLogin = (EditText) findViewById(R.id.id_senhaLogin);
 
