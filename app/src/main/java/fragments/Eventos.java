@@ -53,8 +53,8 @@ public class Eventos extends Fragment {
         recyclerView.setHasFixedSize(true);
 
 
-        lEventos.add(new Event(1, R.mipmap.ic_launcher,"Restaurante", "Um restaurtante muito bom"));
-        lEventos.add(new Event(1, R.mipmap.ic_launcher,"Restaurante", "Um restaurtante muito bom"));
+        lEventos.add(new Event(1, R.mipmap.garotawit,"Evento Cariri", "Voce Não pode perder o maior evento do ano."));
+        lEventos.add(new Event(1, R.mipmap.eventocariri,"Evento Cariri", "Venha conferir esse evento dia 10 de Dezembro no Cariri Garden Shopping."));
         lEventos.add(new Event(1, R.mipmap.ic_launcher,"Restaurante", "Um restaurtante muito bom"));
         lEventos.add(new Event(1, R.mipmap.ic_launcher,"Restaurante", "Um restaurtante muito bom"));
         lEventos.add(new Event(1, R.mipmap.ic_launcher,"Restaurante", "Um restaurtante muito bom"));

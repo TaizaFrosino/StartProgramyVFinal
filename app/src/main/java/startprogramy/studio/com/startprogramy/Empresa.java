@@ -45,18 +45,17 @@ public class Empresa extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
 
 
-        lCompanies.add(new Companies(1,"Cocacola", "Bebidas", "998877665", R.mipmap.coca));
-        lCompanies.add(new Companies(1,"Submarino", "Vendas", "998877665", R.mipmap.submarino));
-        lCompanies.add(new Companies(1,"Americanas", "Vendas", "998877665", R.mipmap.americanas));
-        lCompanies.add(new Companies(1,"Cocacola", "Bebidas", "998877665", R.mipmap.coca));
-        lCompanies.add(new Companies(1,"Submarino", "Vendas", "998877665", R.mipmap.submarino));
-        lCompanies.add(new Companies(1,"Americanas", "Vendas", "998877665", R.mipmap.americanas));
-        lCompanies.add(new Companies(1,"Cocacola", "Bebida", "998877665", R.mipmap.coca));
-        lCompanies.add(new Companies(1,"Submarino", "Vendas", "998877665", R.mipmap.submarino));
-        lCompanies.add(new Companies(1,"Americanas", "Vendas", "998877665", R.mipmap.americanas));
-        lCompanies.add(new Companies(1,"Cocacola", "Bebidas", "998877665", R.mipmap.coca));
-        lCompanies.add(new Companies(1,"Submarino", "Vendas", "998877665", R.mipmap.submarino));
-        lCompanies.add(new Companies(1,"Americanas", "Vendas", "998877665", R.mipmap.americanas));
+        lCompanies.add(new Companies(1,"Mão de Vaca", "Restaurante", "998877665", R.mipmap.maodevaca));
+        lCompanies.add(new Companies(2,"Submarino", "Vendas", "998877665", R.mipmap.submarino));
+        lCompanies.add(new Companies(3,"Americanas", "Vendas", "998877665", R.mipmap.americanas));
+        lCompanies.add(new Companies(4,"Cocacola", "Bebidas", "998877665", R.mipmap.coca));
+        lCompanies.add(new Companies(5,"Submarino", "Vendas", "998877665", R.mipmap.submarino));
+        lCompanies.add(new Companies(6,"Americanas", "Vendas", "998877665", R.mipmap.americanas));
+        lCompanies.add(new Companies(7,"Cocacola", "Bebida", "998877665", R.mipmap.coca));
+        lCompanies.add(new Companies(8,"Submarino", "Vendas", "998877665", R.mipmap.submarino));
+        lCompanies.add(new Companies(9,"Americanas", "Vendas", "998877665", R.mipmap.americanas));
+        lCompanies.add(new Companies(10,"Cocacola", "Bebidas", "998877665", R.mipmap.coca));
+
 
 
         atualizaRecyclerView();

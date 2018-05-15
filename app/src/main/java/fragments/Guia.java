@@ -61,34 +61,17 @@ public class Guia extends Fragment {
         recyclerView.setHasFixedSize(true);
 
         lCategories.add(new Category(1,"Restaurante", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Academia", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Super Mercado", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
-        lCategories.add(new Category(1,"Animais", R.mipmap.ic_launcher_round));
+        lCategories.add(new Category(2,"Academia", R.mipmap.ic_launcher_round));
+        lCategories.add(new Category(3,"Super Mercado", R.mipmap.ic_launcher_round));
+        lCategories.add(new Category(4,"Clinicas", R.mipmap.ic_launcher_round));
+        lCategories.add(new Category(5,"Faculdades", R.mipmap.ic_launcher_round));
+        lCategories.add(new Category(6,"PetShop", R.mipmap.ic_launcher_round));
+        lCategories.add(new Category(7,"Cinemas", R.mipmap.ic_launcher_round));
+        lCategories.add(new Category(8,"Escolas", R.mipmap.ic_launcher_round));
+        lCategories.add(new Category(9,"Clinicas", R.mipmap.ic_launcher_round));
+        lCategories.add(new Category(10,"Outros", R.mipmap.ic_launcher_round));
+
+
 
         atualizaRecyclerView();
 

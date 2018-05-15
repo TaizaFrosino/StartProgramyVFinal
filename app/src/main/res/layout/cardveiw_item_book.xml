@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardview_id"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="170dp"
+    android:layout_height="200dp"
+    android:layout_margin="5dp"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/book_img_id"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:src="@mipmap/americanas"
+                android:scaleType="centerCrop"
+                android:background="@color/colorFundo"/>
+            <TextView
+                android:id="@+id/book_title_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Título do Anúncio"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

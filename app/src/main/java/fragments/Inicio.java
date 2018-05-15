@@ -58,7 +58,7 @@ public class Inicio extends Fragment {
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView_id_inicio);
         vFlipper = (ViewFlipper) view.findViewById(R.id.v_flipper);
-        int images[] = {R.mipmap.americanas, R.mipmap.coca, R.mipmap.americanas};
+        int images[] = {R.mipmap.pizza, R.mipmap.coca, R.mipmap.submarino};
 
         for(int image:images){
             flipperImages(image);
@@ -71,18 +71,18 @@ public class Inicio extends Fragment {
         recyclerView.setLayoutManager(new GridLayoutManager(this.getActivity(),2));
         recyclerView.setAdapter(adapter);
 
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.pizza1));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.subw));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.sanduiche));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.pizza2));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.polo));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.fusion));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.saude1));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.xbox));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.galaxys8));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.tenis));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.calca));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.som));
+        ladversing.add(new Advertising("Pizzaria QDelicia","Categorie Book", "Description Book", R.mipmap.pizza1));
+        ladversing.add(new Advertising("Subway","Categorie Book", "Description Book", R.mipmap.subw));
+        ladversing.add(new Advertising("Sanduiches Gourmert","Categorie Book", "Description Book", R.mipmap.sanduiche));
+        ladversing.add(new Advertising("Pizzaria","Categorie Book", "Description Book", R.mipmap.pizza2));
+        ladversing.add(new Advertising("Volksvagen","Categorie Book", "Description Book", R.mipmap.polo));
+        ladversing.add(new Advertising("Ford","Categorie Book", "Description Book", R.mipmap.fusion));
+        ladversing.add(new Advertising("Saúde","Categorie Book", "Description Book", R.mipmap.saude1));
+        ladversing.add(new Advertising("Games","Categorie Book", "Description Book", R.mipmap.xbox));
+        ladversing.add(new Advertising("Samsung","Categorie Book", "Description Book", R.mipmap.galaxys8));
+        ladversing.add(new Advertising("Adidas","Categorie Book", "Description Book", R.mipmap.tenis));
+        ladversing.add(new Advertising("Adidas","Categorie Book", "Description Book", R.mipmap.calca));
+        ladversing.add(new Advertising("Som automotivo","Categorie Book", "Description Book", R.mipmap.som));
 
 
         atualizaRecyclerView();

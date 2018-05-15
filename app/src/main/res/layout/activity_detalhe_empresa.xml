@@ -70,6 +70,15 @@
         android:layout_weight="2"
         android:gravity="center"
         android:background="#EEEEEE">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/recyclerView_id_detalhe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
