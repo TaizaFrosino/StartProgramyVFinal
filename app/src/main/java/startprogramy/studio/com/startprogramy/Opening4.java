@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import fragments.Inicio;
+
 public class Opening4 extends AppCompatActivity {
 
 
@@ -24,5 +26,9 @@ public class Opening4 extends AppCompatActivity {
                 startActivity(it);
             }
         });
+    }
+    public void startActivityOp4(View view) {
+        Intent act = new Intent(this, Inicio.class);
+        startActivity(act);
     }
 }
