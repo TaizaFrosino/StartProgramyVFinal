@@ -45,8 +45,8 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="150dp"
-                    android:layout_height="170dp"
+                    android:layout_width="210dp"
+                    android:layout_height="250dp"
                     app:srcCompat="@mipmap/iconslocalizaodousuario96" />
 
                 <TextView
