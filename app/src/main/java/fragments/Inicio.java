@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 
 import java.util.ArrayList;
@@ -31,11 +32,13 @@ import startprogramy.studio.com.startprogramy.R;
 
 public class Inicio extends Fragment {
 
+    public ViewFlipper vFlipper;
     public RecyclerView recyclerView;
     public LinearLayoutManager mLayoutManagerLinear;
     public CustomAdapter adapter;
 
     public List<Advertising> ladversing = new ArrayList<>();
+
 
 
     public static Inicio newInstance(int idcid) {
@@ -49,33 +52,37 @@ public class Inicio extends Fragment {
 
     @Override
 
-      public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_inicio, container, false);
         final int idcid = getArguments().getInt("idcid");
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView_id_inicio);
+        vFlipper = (ViewFlipper) view.findViewById(R.id.v_flipper);
+        int images[] = {R.mipmap.americanas, R.mipmap.coca, R.mipmap.americanas};
+
+        for(int image:images){
+            flipperImages(image);
+        }
+
 
 
         mLayoutManagerLinear = new LinearLayoutManager(getActivity());
         adapter = new CustomAdapter(this.getActivity(),ladversing);
         recyclerView.setLayoutManager(new GridLayoutManager(this.getActivity(),2));
         recyclerView.setAdapter(adapter);
-      //  recyclerView.setLayoutManager(mLayoutManagerLinear);
-      //  recyclerView.setItemAnimator(new DefaultItemAnimator());
-      // recyclerView.setHasFixedSize(true);
 
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.pizza1, R.mipmap.pizza));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.subw, R.mipmap.logosubway));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.sanduiche, R.mipmap.sanduba));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.pizza2, R.mipmap.pizzaria));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.polo, R.mipmap.volks));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.fusion, R.mipmap.ford));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.saude1, R.mipmap.saude));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.xbox, R.mipmap.microsoft));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.galaxys8, R.mipmap.samsung));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.tenis, R.mipmap.adida));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.calca, R.mipmap.adidas));
-        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.som, R.mipmap.som1));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.pizza1));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.subw));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.sanduiche));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.pizza2));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.polo));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.fusion));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.saude1));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.xbox));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.galaxys8));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.tenis));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.calca));
+        ladversing.add(new Advertising("Restaurante","Categorie Book", "Description Book", R.mipmap.som));
 
 
         atualizaRecyclerView();
@@ -92,6 +99,19 @@ public class Inicio extends Fragment {
     public void atualizaRecyclerView() {
         adapter = new CustomAdapter(getActivity(), ladversing);
         recyclerView.setAdapter(adapter);
+    }
+
+    public void flipperImages(int image){
+        ImageView imageView = new ImageView(this.getActivity());
+        imageView.setBackgroundResource(image);
+
+        vFlipper.addView(imageView);
+        vFlipper.setFlipInterval(3000);
+        vFlipper.setAutoStart(true);
+
+        vFlipper.setInAnimation(this.getActivity(), android.R.anim.slide_in_left);
+        vFlipper.setOutAnimation(this.getActivity(), android.R.anim.slide_out_right);
+
     }
     /***
      *  Adapter do RecyclerView
@@ -128,38 +148,9 @@ public class Inicio extends Fragment {
             final Advertising advertisings = ladvertisings.get(position);
             MyViewHolder fholder = (MyViewHolder) holder;
 
-        /*    if(position==0){
-                fholder.llGeneral.setBackground(ContextCompat.getDrawable(context,R.drawable.style_category_first));
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.MATCH_PARENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT
-                );
-                params.setMargins(converteDpToPx(12), converteDpToPx(1), converteDpToPx(12), converteDpToPx(0));
-                fholder.llGeneral.setLayoutParams(params);
-            }
-            else if(position == ladvertisings.size()-1){
-                fholder.llGeneral.setBackground(ContextCompat.getDrawable(context,R.drawable.style_category_last));
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.MATCH_PARENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT
-                );
-                params.setMargins(converteDpToPx(12), converteDpToPx(1), converteDpToPx(12), converteDpToPx(16));
-                fholder.llGeneral.setLayoutParams(params);
-            }
-            else {
-                fholder.llGeneral.setBackground(ContextCompat.getDrawable(context, R.drawable.style_category));
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
-                        LinearLayout.LayoutParams.MATCH_PARENT,
-                        LinearLayout.LayoutParams.WRAP_CONTENT
-                );
-                params.setMargins(converteDpToPx(12), converteDpToPx(1), converteDpToPx(12), converteDpToPx(0));
-                fholder.llGeneral.setLayoutParams(params);
-            }*/
-
             fholder.tv_advertisings_title.setText(advertisings.getTitle());
-            //fholder.tv_id_inicio.setText(advertisings.getCategory());
             fholder.img_advertisings_thumbnail.setImageResource(advertisings.getThumbnail());
-            fholder.imageCircle.setImageResource(advertisings.getImageCircle());
+
 
 
             fholder.cardView.setOnClickListener(new View.OnClickListener() {
@@ -175,30 +166,22 @@ public class Inicio extends Fragment {
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
             private final TextView tv_advertisings_title;
-          //  private final TextView tv_id_inicio;
             private final ImageView img_advertisings_thumbnail;
             private final CardView cardView;
-            private CircleImageView imageCircle;
+
 
             public MyViewHolder(View itemView) {
                 super(itemView);
                 tv_advertisings_title = (TextView) itemView.findViewById(R.id.tv_advertisings_title);
-               // tv_id_inicio =  (TextView) itemView.findViewById(R.id.tv_id_inicio);
                 img_advertisings_thumbnail = (ImageView) itemView.findViewById(R.id.img_advertisings_thumbnail);
                 cardView = (CardView) itemView.findViewById(R.id.card_view_inicio);
-                imageCircle = (CircleImageView) itemView.findViewById(R.id.civ_inicio);
+
             }
         }
 
-        public int converteDpToPx(int dp){
-            Resources r = context.getResources();
-            return (int) TypedValue.applyDimension(
-                    TypedValue.COMPLEX_UNIT_DIP,
-                    dp,
-                    r.getDisplayMetrics()
-            );
+
+
         }
     }
-}
 
 

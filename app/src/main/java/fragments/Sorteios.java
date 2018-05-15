@@ -2,6 +2,7 @@ package fragments;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -19,6 +20,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import mvc.Login;
 import startprogramy.studio.com.startprogramy.R;
 
 import java.util.ArrayList;
@@ -125,8 +127,11 @@ public class Sorteios extends Fragment {
 
             fholder.button_sorteio.setOnClickListener(new View.OnClickListener() {
 
+
                 @Override
                 public void onClick(View v) {
+
+
                   /**Intent i = new Intent(getActivity(), Empresa.class);
                     i.putExtra("COD_CATEGORY", category.getId());
                     getActivity().startActivity(i);
@@ -151,6 +156,8 @@ public class Sorteios extends Fragment {
                 tv_sorteio = (TextView) itemView.findViewById(R.id.tv_sorteio);
                 button_sorteio = (Button) itemView.findViewById((R.id.button_sorteio));
             }
+
+
         }
 
         public int converteDpToPx(int dp){

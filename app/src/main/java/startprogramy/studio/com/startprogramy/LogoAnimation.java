@@ -19,14 +19,14 @@ public class LogoAnimation extends AppCompatActivity {
         logo = (ImageView) findViewById(R.id.logoWhite);
         Animation animacao = AnimationUtils.loadAnimation(this, R.anim.teste);
         logo.startAnimation(animacao);
-        animacao.setDuration(3000);
+        animacao.setDuration(1000);
 
         final Intent prox = new Intent(this,Start.class);
 
         Thread timer = new Thread(){
             public void run(){
                 try{
-                    sleep(4000);
+                    sleep(1000);
                 }catch (InterruptedException e ){
                     e.printStackTrace();
                 }

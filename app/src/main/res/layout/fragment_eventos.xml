@@ -22,27 +22,10 @@
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
 
-        <ImageView
-            android:id="@+id/ivEventos"
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_eventos"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"/>
-
-        <TextView
-            android:id="@+id/tvEventos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NOME EVENTO"
-            android:layout_marginLeft="16dp"
-            android:textColor="#e0f18c11"/>
-        <TextView
-            android:id="@+id/tv_desc_Eventos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Descrição"
-            android:layout_marginLeft="16dp"/>
+            android:layout_height="match_parent"/>
 
 
     </LinearLayout>

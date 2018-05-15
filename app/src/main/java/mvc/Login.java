@@ -17,12 +17,15 @@ public class Login extends AppCompatActivity {
     private EditText usuarioLogin;
     private EditText senhaLogin;
 
+
+
     RelativeLayout activity_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
 
 
         btnCadastrar = (Button) findViewById(R.id.btnCadastrar);
